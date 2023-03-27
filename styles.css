@@ -3,20 +3,39 @@ body {
     margin: 0;
 }
 
-h1,
-h2,
-p,
-ul,
-.button{
-    margin-left: 15%;
-    margin-right: 15%;
+/*Only a Sith deals in absolutes.*/
+.header,
+.hero,
+.information,
+.quote-section,
+.action-call,
+.footer{
+    padding-left: 15%;
+    padding-right: 15%;
 }
+
+.button {
+    border-radius: 5px;
+    border: 1px solid #E5E7EB;
+    background-color: #3882F6;
+    width: 100px;
+    height: 25px;
+    padding: 6px 18px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    color:#E5E7EB; 
+    box-sizing: content-box;
+    
+}
+
     
 .header,
 .footer{
     display: flex;
     justify-content: space-between;
     background: #1F2937;
+    margin: 0;
 }
 
 .header > h1{
@@ -37,10 +56,103 @@ ul,
 }
 
 .header > ul,
-.footer{
+.footer,
+.action-call{
     font-size: 18px;
     color: #E5E7EB;
     justify-content: center;
+}
+
+.hero{
+    display: flex;
+    background: #1F2937;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-column {
+    margin-right: 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.left-column > h1{
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #F9FAF8;
+}
+
+.left-column > p{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.right-column {
+    margin: 30px;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+}
+
+.information > h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: extra-bold;
+    color: #1F2937;
+}
+
+.information > .info-section {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.info-section > p {
+    text-align: center;
+}
+
+.thumbnail {
+    border-radius: 5px;
+    border: 3px solid #3882F6;
+
+}
+
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    padding: 15%;
+}
+
+.quote-section > h1 {
+    text-align: left;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.quote-section > h2 {
+    text-align: right;
+}
+
+.action-call {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3882F6;
+    margin: 10%;
+    padding: 2%;
+}
+
+/*Fighting for my life trying to get this button to align*/
+
+.action-call > .button {
+    border: 1px solid #E5E7EB;
 }
 
 
